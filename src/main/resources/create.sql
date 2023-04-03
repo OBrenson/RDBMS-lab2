@@ -56,3 +56,16 @@ INSERT INTO book (`id`, `a_id`,`name`,`price`, sign) VALUES
 	 (21, 1,'Белая гвардия',7000,-1),
 	 (22, 1,'Роковые яйца',13000,-1),
 	 (23, 2,'Война и мир',9000,-1);
+
+create table author (
+	`id` UInt32,
+	`name` String,
+	`year` UInt32
+) ENGINE = ReplacingMergeTree() order by name
+
+ INSERT INTO author (id, name, year) VALUES
+ 	 (1,'Bulgakov',1891),
+ 	 (2,'Tolstoy',1828),
+ 	 (3,'Dostoevsky',1821),
+ 	 (4,'Zamyatin',1884),
+ 	 (5, 'Gogol',1809);
