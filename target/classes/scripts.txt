@@ -1,2 +1,0 @@
-select b.name, a.name, b.price from book b  join author a on b.a_id = a.id order by b.price limit %s by b.price;2,1
-select b.name, a.name, b.price from book b  join author a on b.a_id = a.id group by b.name, a.name, b.price having sum(b.sign) > %s;0
