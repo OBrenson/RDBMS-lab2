@@ -4,14 +4,12 @@ import com.clickhouse.client.*;
 import com.clickhouse.data.ClickHouseColumn;
 import com.clickhouse.data.ClickHouseFormat;
 import com.clickhouse.data.ClickHouseRecord;
-import com.clickhouse.data.format.ClickHouseSimpleRecord;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class ClickHouseExecutor {
 
